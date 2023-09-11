@@ -53,12 +53,12 @@ scrapbtn.addEventListener("click",async()=>{
         chrome.scripting
         .executeScript({
           target : {tabId : tab.id},
-          func : scrapEmailsFromPage,
+          func : scrapDatasFromWebPage,
         })
     
 
 })
-async function scrapEmailsFromPage(){
+async function scrapDatasFromWebPage(){
     var name="nagarjuna"
     var divWithClassName = document.querySelector(".org-top-card-primary-content__logo-container");
 
